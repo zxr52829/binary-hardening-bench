@@ -1,0 +1,96 @@
+{
+  "target-clear.exe (L0)": {
+    "secrets": {
+      "key_leak": 1,
+      "ok_leak": 1,
+      "fail_leak": 1
+    },
+    "algo_fingerprints": [
+      "xor_immediate",
+      "strlen_call"
+    ],
+    "logic_fingerprints": [
+      "xor_immediate",
+      "strlen_call"
+    ],
+    "vm_fingerprints": [],
+    "needs_runtime_decode": false,
+    "biz_strings_visible": 4,
+    "pseudocode_length": 4953,
+    "referenced_strings": 5,
+    "replica_score": 100
+  },
+  "target-hard.exe (L1)": {
+    "secrets": {
+      "key_leak": 0,
+      "ok_leak": 0,
+      "fail_leak": 0
+    },
+    "algo_fingerprints": [
+      "xor_immediate",
+      "rolling_key",
+      "byte_compare_loop",
+      "strlen_call"
+    ],
+    "logic_fingerprints": [
+      "xor_immediate",
+      "rolling_key",
+      "byte_compare_loop",
+      "strlen_call"
+    ],
+    "vm_fingerprints": [],
+    "needs_runtime_decode": false,
+    "biz_strings_visible": 1,
+    "pseudocode_length": 5596,
+    "referenced_strings": 1,
+    "replica_score": 84
+  },
+  "target-vm.exe (L2)": {
+    "secrets": {
+      "key_leak": 0,
+      "ok_leak": 0,
+      "fail_leak": 0
+    },
+    "algo_fingerprints": [
+      "byte_compare_loop",
+      "strlen_call",
+      "vm_table"
+    ],
+    "logic_fingerprints": [
+      "byte_compare_loop",
+      "strlen_call"
+    ],
+    "vm_fingerprints": [
+      "vm_table"
+    ],
+    "needs_runtime_decode": false,
+    "biz_strings_visible": 1,
+    "pseudocode_length": 8020,
+    "referenced_strings": 1,
+    "replica_score": 36
+  },
+  "target-vm5.exe (L3)": {
+    "secrets": {
+      "key_leak": 0,
+      "ok_leak": 0,
+      "fail_leak": 0
+    },
+    "algo_fingerprints": [
+      "byte_compare_loop",
+      "strlen_call",
+      "vm_table"
+    ],
+    "logic_fingerprints": [
+      "byte_compare_loop",
+      "strlen_call"
+    ],
+    "vm_fingerprints": [
+      "vm_table"
+    ],
+    "needs_runtime_decode": true,
+    "biz_strings_visible": 1,
+    "pseudocode_length": 10053,
+    "referenced_strings": 1,
+    "replica_score": 26
+  }
+}

@@ -1,0 +1,18 @@
+# 第三方软件备份 —— 绝不入库
+rea-agents-v6.5.0-orig/
+
+# 编译产物（源码可复现，无需入库）
+*.exe
+*.obj
+*.pdb
+*.ilk
+nostrip/
+tools/
+
+# 原始观测日志（16MB，结构化重复，只保留 summary）
+*.raw.jsonl
+*.ndjson
+
+# 临时文件
+*.tmp
+look.tmp.*
